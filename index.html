@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta"
+    rel="stylesheet">
+  <title>Invie - tus mejore guitarras!</title>
+</head>
+
+
+<body>
+
+
+  <!-- portada -->
+  <section id="portada background" class="portada">
+    <header id="header" class="header  contenedor">
+      <!-- logotipo -->
+      <figure class="logotipo">
+        <img src="images/invie.png" alt="logo invie">
+      </figure>
+      <!-- menu -->
+      <nav class="menu">
+        <ul>
+          <li><a class="menu__Home no-decoration" href="index.html">Home</a></li>
+          <li><a class="menu__guitarras no-decoration" href="#guitarras">Guitarras</a></li>
+          <li><a class="menu__Precios no-decoration" href="precios.html">Precios</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="contenedor">
+      <!-- titulo -->
+      <h1 class="titulo">Guitarras <span>invie</span>sibles</h1>
+      <!-- resumen -->
+      <h3 class="title-a">Se la estrella de Rock que siempre quisiste
+        ser</h3>
+      <!-- boton -->
+      <a href="precios.html" class="portada__boton">Conoce mas</a >
+    </div>
+  </section>
+
+
+  <!-- guitarras -->
+  <section class="guitarras contenedor">
+    <h2>Nuestras guitarras</h2>
+    <article class="guitarras__guitarra1">
+      <img src="images/invie-acustica.png" alt="guitarra invie acustica"
+        class="right">
+        <div class="contenedor-guitarras">
+          <h3 class="title-b">Invie Acustica</h3>
+          <ol>
+          	<li>Estilo vintage</li>
+          	<li>Madera Pura</li>
+          	<li>Incluye estuche invisible de aluminio</li>
+          </ol>
+        </div>
+    </article>
+
+    <article class="guitarras__guitarra2 ">
+      <img src="images/invie-classic.png" alt="guitarra invie clasica"
+        class="left">
+        <div class="contenedor-guitarras">
+          <h3 class="title-b">Invie Classic</h3>
+          <ol>
+          	<li>Estilo y vintage</li>
+          	<li>Liviana</li>
+          	<li>Inicia tu camino como rockstar</li>
+          </ol>
+        </div>
+    </article>
+  </section>
+</body>
+<footer class="footer">
+  <div class="contenedor">
+    <div class="contacto">
+      <img src="images/invie-white.png" alt="logo blanco">
+      <a class="no-decoration" href="tel:5732099447829"><strong>Telefono</strong>
+                  <span>3209947829</span></a>
+      <a class="no-decoration" href="mailto:contactoinvie@invie.com"><strong>E-mail</strong>
+                  <span>contactoinvie@invie.com</span></a>
+    </div>
+    <form class="formulario">
+      <div class="col1">
+        <label for="f_nombre">Nombre</label>
+        <input type="text" required name="nombre" id="f_nombre" />
+        <label for="f_email">Email</label>
+        <input type="email" required name="email" id="f_email"/>
+        <div class="sexo">
+          <label for="f_mujer">
+            <input type="radio" id="f_mujer" name="sexo" value="mujer"/>Mujer
+          </label>
+          <label for="f_Hombre">
+            <input type="radio" id="f_Hombre" name="sexo" value="hombre"/>Hombre
+          </label>
+        </div>
+        <div class="intereses">
+          <label for="f_cotizacion">
+            <input type="checkbox" id="f_cotizacion" name="intereses" value="cotizacion"/> Cotizacion
+          </label>
+          <label for="f_reclamos">
+            <input type="checkbox" id="f_reclamos" name="intereses"/ value="reclamos"> Reclamos
+          </label>
+          <label for="f_comentarios">
+            <input type="checkbox" id="f_comentarios" name="intereses" value="comentarios"/> Comentarios
+          </label>
+          <label for="f_otros">
+            <input type="checkbox" id="f_otros" name="intereses" value="otros"/> Otros
+          </label>
+        </div>
+      </div>
+
+      <div class="col2">
+        <label for="f_comentarios">Comentarios
+          <textarea name="comentarios" id="f_comentarios" rows="8" cols="40"></textarea>
+          <input type="submit" value="Enviar" class="portada__boton"/>
+        </label>
+      </div>
+    </form>
+  </div>
+</footer>
+</html>
